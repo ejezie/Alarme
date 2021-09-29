@@ -1,0 +1,136 @@
+---
+---
+
+// Imports
+@import "bootstrap";
+
+
+.dropdown.active {
+  a.dropdown-item{
+    color: $body-color!important;
+    &.active{
+      color: $white!important;
+    }
+  }
+}
+
+
+section.seo{
+	padding: 70px 0 70px;
+}
+
+section.seo h1{
+	font-size: 45px;
+}
+
+section.seo h2{
+	font-size: 36px;
+}
+
+section.seo h3{
+	font-size: 24px;
+}
+
+
+section.seo h4{
+	font-size: 18px;
+}
+
+.call-to-action-btn{
+	color: #fff;
+    background-color: #ccc;
+    border-color: #eee;
+    padding: 15px;
+  	border-radius: 2px;
+  	font-size: 18px;
+  	line-height: normal;
+  	-webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+
+.call-to-action-btn:hover{
+	text-decoration: none;
+	background-color: #333;
+	color: #fff;
+}
+
+.btn-margin{
+	margin-top: 30px;
+}
+
+.call-to-action{
+	position: relative;
+    z-index: 1;
+    border: 1px solid #eee;
+}
+
+
+.call-to-action-inner{
+	padding: 28px 28px 27px 31px;
+    background-color: #fff;
+    min-height: 110px;
+}
+
+.call-to-action-inner:before, .call-to-action-inner:after {
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    height: 20%;
+    max-width: 300px;
+    max-height: 100px;
+    position: absolute;
+    content: '';
+    z-index: -1;
+    -webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+
+.call-to-action-inner:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    transform: rotate(3deg);
+}
+
+
+.logo{
+
+
+  .text{
+    display: flex;
+    flex-direction: column;
+    margin-top: -.7rem;
+
+    :nth-child(1){
+      margin-bottom: 5px;
+      color: rgb(230, 0, 0);
+      font-size: 2.2rem;
+      font-weight: 700;
+    }
+
+
+    span{
+      position: relative;
+      top: -1.8px;
+      font-size: 2.4rem !important;
+    }
+
+  }
+
+}
+
+h2{
+  text-transform: uppercase !important;
+  color: #e60000 !important;
+}

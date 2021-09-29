@@ -1,0 +1,104 @@
+{% comment %} Lien actuel avec class="active" Nous nous pouvons pas utiliser {%
+link %} dans le "if". Donc il faut écrire le lien manuellement. {% endcomment %}
+
+<div>
+  <header>
+    <div class="fixphone">
+      <a href="tel:0636998017"
+        ><i class="fa fa-phone" aria-hidden="true"></i> 06 36 99 80 17</a
+      >
+    </div>
+    <div class="menu">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-2">
+            <a href="{% link accueil.html %}">
+              <div class="logo">
+                <!-- <span>BASSET</span> Sécurité -->
+                <img style="height: 40px !important; width: 50px;" src="./assets/img/logo.png" class="img-responsive"  height="30" />
+                <div class="text">
+                  <div>ALARME-<span>91</span></div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-10">
+            <div class="phone-xs visible-xs visible-sm text-center">
+              <a href="tel:0636998017"
+                ><i class="fa fa-phone" aria-hidden="true"></i> 06 36 99 80
+                17</a
+              >
+            </div>
+            <nav class="">
+              <div class="navbar-header">
+                <button
+                  type="button"
+                  class="navbar-toggle"
+                  data-toggle="collapse"
+                  data-target="#bs-example-navbar-collapse-1"
+                >
+                  <span class="sr-only">Navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <div
+                class="collapse navbar-collapse"
+                id="bs-example-navbar-collapse-1"
+              >
+                <ul>
+                  <li>
+                    <a class="{% if page.url == '/' %} active {% endif %}" href="{% link accueil.html %}"
+                      ><span>Accueil</span></a
+                    >
+                  </li>
+                  <li>
+                    <a class="{% if page.url == '/qui-sommes-nous' %} active {% endif %}" href="{% link quiSommesNous.html %}"
+                      ><span>Notre entreprise</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="{% if page.url == '/vous-etes-particulier' %} active {% endif %}" href="{% link vous-etes-particulier.html %}"
+                      ><span>Vous êtes particulier</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="{% if page.url == '/vous-etes-professionnel' %} active {% endif %}" href="{% link vous-etes-professionnel.html %}"
+                      ><span>Vous êtes professionnel</span></a
+                    >
+                  </li>
+                  <!-- <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Nos prestations</span><b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                     
+                    </ul>
+                  </li> -->
+                  <li>
+                    <a class="{% if page.url == '/contact' %} active {% endif %}" href="{% link contact.html %}"
+                      ><span>Contact</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="devis-btn" href="{% link devis.html %}"
+                      ><span>Diagnostic gratuit </span></a
+                    >
+                  </li>
+                  <li class="phone">
+                    <a href="tel:0636998017"
+                      ><i class="fa fa-phone" aria-hidden="true"></i> 06 36 99
+                      80 17</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <!-- <div class="phone visible-xs text-center">
+      <a href="tel:06 36 99 80 17" class="button-phone"><i class="fa fa-phone" aria-hidden="true"></i> 0636998017</a>
+    </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>

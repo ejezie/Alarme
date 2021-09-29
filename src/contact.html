@@ -1,0 +1,91 @@
+---
+layout: default
+permalink: /contact
+title: Contactez Nous
+---
+
+<section class="slider">
+  <div class="container">
+    <h1>Contact</h1>
+  </div>
+</section>
+<section class="one">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 infos">
+        <h3>Adresse</h3>
+        <p>
+          <i class="fa fa-home" aria-hidden="true"></i> 42 rue Paul Claudel
+          91000<br />Evry
+        </p>
+        <h3>Telephone</h3>
+        <p>
+          <i class="fa fa-phone" aria-hidden="true"></i><a href="tel:0636998017"> 06 36 99 80 17</a>
+        </p>
+        <h3>Email</h3>
+        <p>
+          <i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:reda@bhgroupe.fr">reda@bhgroupe.fr</a>
+        </p>
+      </div>
+      <div class="col-sm-8 form-contact">
+        <h2>Remplissez notre formulaire en ligne</h2>
+        <p>Un professionnel vous répondra dans les 48 heures ouvrées.</p>
+        <div class="div01"></div>
+        <form class="" id="contactForm" method="post" action="{{ site.data.company.url.notify }}">
+          <input type="hidden" name="lang" value="fr">
+          <input type="hidden" name="redirectUrl" value="{{site.data.company.url.redirect}}" />
+          <input type="hidden" name="type" value="contact" />
+          <input type="hidden" name="website" value="{{ site.data.company.website }}" />
+          <input type="hidden" name="lang" value="{{ site.data.company.lang }}" />
+          <input type="hidden" name="firstName" value="" />
+          <input type="hidden" name="key" value="{{ site.data.company.recaptcha.server }}">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group has-feedback">
+                <input type="text" class="form-control" id="email" name="email" placeholder="Email" />
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group has-feedback">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Nom" />
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group has-feedback">
+                <input type="text" class="form-control" id="phone" name="phone" placeholder="Telephone" />
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group has-feedback">
+                <input type="text" class="form-control" id="code-postal" name="code-postal" placeholder="Code Postal" />
+              </div>
+            </div>
+          </div>
+          <div class="form-group has-feedback">
+            <textarea rows="6" name="message" class="form-control" id="message" placeholder="Message"></textarea>
+          </div>
+          <div class="checkbox">
+            <input name="condition" required type="checkbox"/>
+            <span class="contact_content-form--label">
+              En utilisant ce formulaire, vous acceptez le stockage et la gestion
+              de vos données par ce site *</span>
+            <i class="fa fa-info-square" aria-hidden="true"></i>
+          </div>
+          <div style="margin: auto" class="g-recaptcha"></div>
+          <div style="margin: 1rem auto" class="contact-form-response" id="contact-form-response"></div>
+          <div class="buttondevis">
+            <button type="submit" name="contact" class="button">
+              <span>Envoyer</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2636.5485934610892!2d2.4291048156665815!3d48.63761957926659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5de23ed21fdd1%3A0x568db99293527174!2s42+Rue+Paul+Claudel%2C+91000+%C3%89vry%2C+France!5e0!3m2!1sfr!2sma!4v1564586097173!5m2!1sfr!2sma"
+  width="100%" height="450" frameborder="0" style="border: 0;" allowfullscreen></iframe>
